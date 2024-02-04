@@ -23,6 +23,7 @@ pipeline {
                         sh(script: 'aws s3 cp /var/lib/jenkins/workspace/JenkinsPipeline/index.html s3://test-env-jenkins-20240204')
             }
         }
+    }
          stage('Test') {
             steps {
                 echo 'Testing'
